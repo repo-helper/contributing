@@ -1,0 +1,33 @@
+# Configuration for 'repo_helper' (https://github.com/domdfcoding/repo_helper)
+---
+modname: 'contributing'
+copyright_years: '2020-2021'
+author: 'Dominic Davis-Foster'
+email: 'dominic@davis-foster.co.uk'
+username: 'repo-helper'
+assignee: 'domdfcoding'
+version: '2021.0.0'
+license: 'MIT'
+short_desc: ' Contributing guide for repo-helper and associated projects. '
+
+use_whey: True
+docs_fail_on_warning: true
+sphinx_html_theme: furo
+enable_tests: false
+enable_conda: false
+on_pypi: false
+
+python_versions:
+ - '3.8'
+
+sphinx_conf_epilogue:
+ - nitpicky = True
+ - del version
+ - del release
+ - html_title = "repo-helper Contributing Guide"
+
+extra_sphinx_extensions:
+ - html_section
+
+exclude_files:
+ - contributing
