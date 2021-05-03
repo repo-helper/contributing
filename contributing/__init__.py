@@ -2,7 +2,7 @@
 #
 #  __init__.py
 """
- Contributing guide for repo-helper and associated projects.
+Contributing guide for repo-helper and associated projects.
 """
 #
 #  Copyright © 2020-2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>

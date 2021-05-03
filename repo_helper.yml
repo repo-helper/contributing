@@ -8,7 +8,7 @@ username: 'repo-helper'
 assignee: 'domdfcoding'
 version: '2021.0.0'
 license: 'MIT'
-short_desc: ' Contributing guide for repo-helper and associated projects. '
+short_desc: 'Contributing guide for repo-helper and associated projects'
 
 use_whey: True
 docs_fail_on_warning: true

@@ -5,7 +5,7 @@ build-backend = "whey"
 [project]
 name = "contributing"
 version = "2021.0.0"
-description = " Contributing guide for repo-helper and associated projects. "
+description = "Contributing guide for repo-helper and associated projects"
 readme = "README.rst"
 keywords = []
 dynamic = [ "requires-python", "classifiers", "dependencies",]
