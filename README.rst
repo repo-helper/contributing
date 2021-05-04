@@ -1,6 +1,6 @@
-=============
-contributing
-=============
+======================
+Contributing Guide
+======================
 
 .. start short_desc
 
