@@ -83,7 +83,7 @@ You can see the results of these test at the bottom of the pull request page:
 
 A label will be added to the pull request automatically if the tests fail:
 
-.. figure:: pull-request-labels
+.. figure:: pull-request-labels.png
 
 This makes it easy to identify which tests are failing.
 Once the tests pass the label will be removed automatically.
@@ -99,7 +99,7 @@ For more information see https://github.blog/2021-04-22-github-actions-update-he
 * Flake8
 * The documentation check, if the project has documentation.
 
-If the project only supports Linux the tests on Window will not run and are not required to merge the pull request.
+If the project only supports Linux the tests on Windows will not run and are not required to merge the pull request.
 
 Tests on macOS are optional as they take longer than other platforms.
 CPython 3.10 and PyPy 3.7 are considered experimental and will not block a pull request from being merged if they fail.

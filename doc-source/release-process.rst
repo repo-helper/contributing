@@ -41,7 +41,7 @@ Once the tests pass GitHub Actions will take care of building and uploading to P
 and Anaconda_ (if enabled for the project).
 You should keep an eye on the tests to ensure they pass.
 
-The release will be automatcally copied to `GitHub Releases`_ within the next two days using OctoCheese_
+The release will be automatcally copied to `GitHub Releases`_ within the next two days using OctoCheese_.
 
 .. _repo-helper: https://docs.repo-helper.uk
 .. _GitHub Actions: https://github.com/features/actions
