@@ -22,7 +22,7 @@ file = "LICENSE"
 Homepage = "https://github.com/repo-helper/contributing"
 "Issue Tracker" = "https://github.com/repo-helper/contributing/issues"
 "Source Code" = "https://github.com/repo-helper/contributing"
-Documentation = "https://contributing.readthedocs.io/en/latest"
+Documentation = "https://contributing.repo-helper.uk"
 
 [tool.mkrecipe]
 conda-channels = [ "repo-helper",]

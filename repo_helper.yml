@@ -16,6 +16,7 @@ sphinx_html_theme: furo
 enable_tests: false
 enable_conda: false
 on_pypi: false
+docs_url: https://contributing.repo-helper.uk
 
 python_versions:
  - '3.8'
