@@ -21,3 +21,4 @@ contributing
 	tests
 	documentation
 	building
+	release-process

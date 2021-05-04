@@ -8,9 +8,10 @@ The recommended way to build from source is via tox_:
 
 	tox -e build
 
-As well as build the sdist and wheel it will check them for common errors, such as missing files or potential rendering issues on PyPI_.
+As well as building the sdist and wheel this will check them for common errors,
+such as missing files or potential rendering issues on PyPI_.
 
-The output files will be in the directory ``dist``.
+The output files will be in the ``dist`` directory.
 
 If you wish, you may also use `pep517.build`_ or another :pep:`517`-compatible build tool.
 

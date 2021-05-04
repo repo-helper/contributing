@@ -31,3 +31,4 @@ extra_sphinx_extensions:
 
 exclude_files:
  - contributing
+ - Source_rst
