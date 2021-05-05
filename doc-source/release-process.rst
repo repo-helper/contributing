@@ -35,6 +35,7 @@ Once the release has been created locally, push to GitHub. Ensure you push the t
 
 .. prompt:: bash
 
+	git push
 	git push --tags
 
 Once the tests pass GitHub Actions will take care of building and uploading to PyPI_
