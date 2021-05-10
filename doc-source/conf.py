@@ -64,6 +64,10 @@ autodoc_default_options = {
 		"exclude-members": ','.join(config["autodoc_exclude_members"]),
 		}
 
+latex_elements = {
+		"fncychap": "\\usepackage[Bjarne]{fncychap}\n\\ChNameAsIs\n\\ChTitleAsIs\n",
+		}
+
 nitpicky = True
 del version
 del release
