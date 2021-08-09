@@ -24,10 +24,6 @@ Homepage = "https://github.com/repo-helper/contributing"
 "Source Code" = "https://github.com/repo-helper/contributing"
 Documentation = "https://contributing.repo-helper.uk"
 
-[tool.mkrecipe]
-conda-channels = [ "repo-helper",]
-extras = "all"
-
 [tool.whey]
 base-classifiers = []
 python-versions = [ "3.8",]
@@ -51,10 +47,10 @@ extensions = [
     "sphinx_toolbox.more_autosummary",
     "sphinx_toolbox.documentation_summary",
     "sphinx_toolbox.tweaks.param_dash",
+    "sphinx_toolbox.tweaks.latex_layout",
     "sphinx_toolbox.tweaks.latex_toc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.mathjax",
-    "sphinxcontrib.httpdomain",
     "sphinxcontrib.extras_require",
     "sphinx.ext.todo",
     "sphinxemoji.sphinxemoji",
@@ -63,6 +59,7 @@ extensions = [
     "sphinxcontrib.default_values",
     "sphinxcontrib.toctree_plus",
     "sphinx_debuginfo",
+    "sphinx_licenseinfo",
     "seed_intersphinx_mapping",
     "html_section",
 ]
@@ -86,7 +83,6 @@ toctree_plus_types = [
     "exception",
     "flag",
     "function",
-    "method",
     "namedtuple",
     "protocol",
     "role",
@@ -114,3 +110,10 @@ autodoc_exclude_members = [
     "__abstractmethods__",
     "__hash__",
 ]
+
+[tool.mypy]
+python_version = "3.8"
+namespace_packages = true
+check_untyped_defs = true
+warn_unused_ignores = true
+no_implicit_optional = true
