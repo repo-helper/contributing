@@ -67,8 +67,13 @@ repos:
     - id: remove-crlf
     - id: forbid-crlf
 
- - repo: https://github.com/repo-helper/formate
-   rev: v0.4.3
+ - repo: https://github.com/python-formate/snippet-fmt
+   rev: v0.1.1
+   hooks:
+    - id: snippet-fmt
+
+ - repo: https://github.com/python-formate/formate
+   rev: v0.4.9
    hooks:
     - id: formate
       exclude: ^(doc-source/conf|__pkginfo__|setup)\.(_)?py$

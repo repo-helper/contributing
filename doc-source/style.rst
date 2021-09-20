@@ -31,21 +31,21 @@ Function signatures
 
 Function signatures should be laid out like this:
 
-.. code-block:: python
+.. code-block:: python3
 
 	def long_function_name(
-        var_one: str,
-        var_two: int,
-        var_three: List[str],
-        var_four: Dict[str, Any],
-        ) -> Iterable[Tuple[str, int]]:
+			var_one: str,
+			var_two: int,
+			var_three: List[str],
+			var_four: Dict[str, Any],
+			) -> Iterable[Tuple[str, int]]:
 		...
 
 with each argument on its own line, and the function name and return annotatons on separate lines.
 Ensure to include the trailing comma after the last argument's annotation.
 If the signature is short enough it may be placed on one line:
 
-.. code-block:: python
+.. code-block:: python3
 
 	def function_name(var_one: str, var_two: int) -> bool:
 		...
@@ -82,23 +82,25 @@ Long Sequences
 
 Long sequences should be written with each element on its own line and a trailing comma after the last element:
 
-.. code-block:: python
+.. code-block:: python3
 
 	# Bad
 	my_list = [
-	    1, 2, 3,
-	    4, 5, 6
-	    ]
+			1, 2, 3,
+			4, 5, 6
+			]
+
+.. code-block:: python
 
 	# Good
 	my_list = [
-	    1,
-	    2,
-	    3,
-	    4,
-	    5,
-	    6,
-	    ]
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			]
 
 
 Maximum Line Length
@@ -166,15 +168,15 @@ Docstrings
 
 The first line of the docstring must start a new line:
 
-.. code-block:: python
+.. code-block:: python3
 
 	# Bad:
-
 	"""Return a foobang
 	"""
 
-	# Good:
+.. code-block:: python
 
+	# Good:
 	"""
 	Return a foobang
 	"""
