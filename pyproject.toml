@@ -24,10 +24,6 @@ Homepage = "https://github.com/repo-helper/contributing"
 "Source Code" = "https://github.com/repo-helper/contributing"
 Documentation = "https://contributing.repo-helper.uk"
 
-[tool.mkrecipe]
-conda-channels = [ "repo-helper",]
-extras = "all"
-
 [tool.whey]
 base-classifiers = []
 python-versions = [ "3.8",]
@@ -51,19 +47,21 @@ extensions = [
     "sphinx_toolbox.more_autosummary",
     "sphinx_toolbox.documentation_summary",
     "sphinx_toolbox.tweaks.param_dash",
+    "sphinxcontrib.toctree_plus",
+    "sphinx_toolbox.tweaks.latex_layout",
     "sphinx_toolbox.tweaks.latex_toc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.mathjax",
-    "sphinxcontrib.httpdomain",
     "sphinxcontrib.extras_require",
     "sphinx.ext.todo",
     "sphinxemoji.sphinxemoji",
     "notfound.extension",
     "sphinx_copybutton",
     "sphinxcontrib.default_values",
-    "sphinxcontrib.toctree_plus",
     "sphinx_debuginfo",
+    "sphinx_licenseinfo",
     "seed_intersphinx_mapping",
+    "html_section",
     "html_section",
 ]
 sphinxemoji_style = "twemoji"
@@ -86,7 +84,6 @@ toctree_plus_types = [
     "exception",
     "flag",
     "function",
-    "method",
     "namedtuple",
     "protocol",
     "role",
@@ -96,6 +93,7 @@ add_module_names = false
 hide_none_rtype = true
 all_typevars = true
 overloads_location = "bottom"
+html_codeblock_linenos_style = "table"
 autodoc_exclude_members = [
     "__dict__",
     "__class__",
@@ -121,9 +119,17 @@ namespace_packages = true
 check_untyped_defs = true
 warn_unused_ignores = true
 no_implicit_optional = true
+show_error_codes = true
 
 [tool.snippet-fmt]
 directives = [ "code-block",]
+
+[tool.dependency-dash."requirements.txt"]
+order = 10
+
+[tool.dependency-dash."doc-source/requirements.txt"]
+order = 30
+include = false
 
 [tool.snippet-fmt.languages.python]
 reformat = true
