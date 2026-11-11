@@ -26,7 +26,7 @@ jobs:
       fail-fast: False
       matrix:
         config:
-          - {python-version: "3.8", os-ver: "14", testenvs: "py38,build", experimental: False}
+          - {python-version: "3.8", os-ver: "26", testenvs: "py38,build", experimental: False}
 
     steps:
       - name: Checkout 🛎️
